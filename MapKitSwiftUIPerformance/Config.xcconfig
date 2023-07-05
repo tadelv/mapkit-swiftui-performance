@@ -1,0 +1,14 @@
+//
+//  Config.xcconfig
+//  MapKitSwiftUIPerformance
+//
+//  Created by Vid Tadel on 05/07/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+//BUILD_IOS_17= 1
+MY_SWIFT_ACTIVE_COMPILATION_CONDITIONS_FOR_SDK_170000[sdk=iOS]= IOS_VERSION_17_0_SDK_AVAILABLE
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) // BUILD_IOS_17 //$(MY_SWIFT_ACTIVE_COMPILATION_CONDITIONS_FOR_SDK_$(SDK_VERSION_MAJOR))
+
+

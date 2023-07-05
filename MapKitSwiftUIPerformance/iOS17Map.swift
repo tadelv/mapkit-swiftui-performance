@@ -16,9 +16,9 @@ extension POI: Identifiable {
   }
 }
 
+#if BUILD_IOS_17
 @available(iOS 17, *)
 struct iOS17Map: View {
-
   @State var position: MapCameraPosition = .automatic
   var body: some View {
     Map(position: $position) {
@@ -34,3 +34,4 @@ struct iOS17Map: View {
     }
   }
 }
+#endif

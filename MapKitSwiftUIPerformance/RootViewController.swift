@@ -27,11 +27,16 @@ class RootViewController: UIViewController {
     stack.addArrangedSubview(UIButton(primaryAction: UIAction(title: "SwiftUI") { [weak navigationController] _ in
       navigationController?.pushViewController(UIHostingController(rootView: ContentView()), animated: true)
     }))
+    stack.addArrangedSubview(UIButton(primaryAction: UIAction(title: "ViewControllerRepresentable") { [weak navigationController] _ in
+      navigationController?.pushViewController(UIHostingController(rootView: EmbeddedViewController()), animated: true)
+    }))
+#if BUILD_IOS_17
     if #available(iOS 17.0, *) {
       stack.addArrangedSubview(UIButton(primaryAction: UIAction(title: "SwiftUI17") { [weak navigationController] _ in
         navigationController?.pushViewController(UIHostingController(rootView: iOS17Map()), animated: true)
       }))
     }
+#endif
 
     view.addSubview(stack)
     NSLayoutConstraint.activate([
