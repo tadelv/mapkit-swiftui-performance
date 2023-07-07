@@ -22,7 +22,6 @@
 /* Begin PBXFileReference section */
 		1858E8A92A2EF4B600E1CD7F /* iOS17Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS17Map.swift; sourceTree = "<group>"; };
 		1861BAE62A5593A600B2381A /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
-		1861BAE82A55977C00B2381A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		18B33E7229E5E882001EAB67 /* MapKitSwiftUIPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKitSwiftUIPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B33E7529E5E882001EAB67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B33E7729E5E882001EAB67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 				18B33E7E29E5E883001EAB67 /* Assets.xcassets */,
 				18B33E8029E5E883001EAB67 /* LaunchScreen.storyboard */,
 				18B33E8329E5E883001EAB67 /* Info.plist */,
-				1861BAE82A55977C00B2381A /* Config.xcconfig */,
 			);
 			path = MapKitSwiftUIPerformance;
 			sourceTree = "<group>";
@@ -178,7 +176,6 @@
 /* Begin XCBuildConfiguration section */
 		18B33E8429E5E883001EAB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1861BAE82A55977C00B2381A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -293,7 +290,6 @@
 		};
 		18B33E8729E5E883001EAB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1861BAE82A55977C00B2381A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

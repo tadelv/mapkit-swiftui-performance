@@ -30,7 +30,7 @@ class RootViewController: UIViewController {
     stack.addArrangedSubview(UIButton(primaryAction: UIAction(title: "ViewControllerRepresentable") { [weak navigationController] _ in
       navigationController?.pushViewController(UIHostingController(rootView: EmbeddedViewController()), animated: true)
     }))
-#if BUILD_IOS_17
+#if compiler(>=5.9)
     if #available(iOS 17.0, *) {
       stack.addArrangedSubview(UIButton(primaryAction: UIAction(title: "SwiftUI17") { [weak navigationController] _ in
         navigationController?.pushViewController(UIHostingController(rootView: iOS17Map()), animated: true)

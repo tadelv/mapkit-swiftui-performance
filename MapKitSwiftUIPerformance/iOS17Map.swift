@@ -16,7 +16,7 @@ extension POI: Identifiable {
   }
 }
 
-#if BUILD_IOS_17
+#if compiler(>=5.9)
 @available(iOS 17, *)
 struct iOS17Map: View {
   @State var position: MapCameraPosition = .automatic
